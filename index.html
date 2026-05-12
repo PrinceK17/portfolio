@@ -1018,3 +1018,105 @@ MUSIC: Lo-fi, warm, productive. Think chill aesthetic, not loud.</div>
     </div>
   </div>
 </section>
+
+
+<!-- WHY WORK WITH ME -->
+<section class="section-wrap mid" id="why">
+  <div class="section-grid">
+    <div class="section-label">Why Me</div>
+    <div class="section-body">
+      <h2 class="section-title">Why Work With Me</h2>
+      <p>Most writers will give you words. I give you the feeling behind them.</p>
+      <p>I don't just write to fill a page or hit a word count. I write because I genuinely believe that the right sentence at the right moment can change how someone sees themselves, their situation, their world. That's not something I learned. That's something I've always known.</p>
+      <p>When you bring me a brief, I don't just execute it. I think about the person on the other end of it. Who are they? What do they already believe? What do they need to feel before they can act? I write toward that person, not around them.</p>
+      <p>I've written about heartbreak and self-worth and the quiet cost of silence in men. I've written fiction set in Lagos go-slows and speeches for companies who lost people and kept going. I've written blog posts that make burned-out millennials exhale. Every single time, the goal was the same: make the reader feel something real.</p>
+      <p>That's what I'll do for your brand, your story, your audience.</p>
+      <p>Not AI writing dressed up. Not templated content with your name swapped in. Writing that sounds like a human being who actually thought about what they were saying, and meant it.</p>
+      <p>If that's what you're looking for, we'll work well together.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section-wrap" id="contact">
+  <div class="contact-grid">
+    <div>
+      <h2 class="contact-headline">Let's make something<br><em>worth feeling.</em></h2>
+      <p class="contact-sub">You've walked through the work. You've seen what I care about and how I write. If something here resonated, that's not a coincidence. Let's talk.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:princekels16@gmail.com" class="contact-link">
+        <div class="contact-icon">✉</div>
+        <div class="contact-info">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">princekels16@gmail.com</div>
+        </div>
+        <span>→</span>
+      </a>
+      <a href="https://www.linkedin.com/in/prince-kelvin" target="_blank" class="contact-link">
+        <div class="contact-icon">in</div>
+        <div class="contact-info">
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">Prince Kelvin</div>
+        </div>
+        <span>→</span>
+      </a>
+      <a href="https://substack.com/@jedspeare" target="_blank" class="contact-link">
+        <div class="contact-icon">✍</div>
+        <div class="contact-info">
+          <div class="contact-label">Substack</div>
+          <div class="contact-value">Jedspeare, All Love, the Man</div>
+        </div>
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-name">Prince Kelvin</div>
+  <div class="footer-note">Writer · Content Writer · Ghostwriter · Storyteller · © 2026</div>
+</footer>
+
+<script>
+  function switchTab(tab) {
+    document.querySelectorAll('.tab-btn').forEach(function(b) {
+      b.classList.remove('active');
+    });
+    document.querySelectorAll('.tab-content').forEach(function(c) {
+      c.classList.remove('active');
+    });
+    var tabs = ['essays','mock','maven'];
+    var btns = document.querySelectorAll('.tab-btn');
+    tabs.forEach(function(t, i) {
+      if (t === tab) btns[i].classList.add('active');
+    });
+    document.getElementById('tab-' + tab).classList.add('active');
+  }
+
+  function togglePiece(btn) {
+    var body = btn.nextElementSibling;
+    var isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    btn.querySelector('span:last-child').textContent = isOpen ? '↓' : '↑';
+    btn.querySelector('span:first-child').textContent = isOpen ? 'Read Piece' : 'Close';
+  }
+
+  function toggleMaven(btn) {
+    var body = btn.nextElementSibling;
+    var isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    btn.querySelector('span:last-child').textContent = isOpen ? '↓' : '↑';
+    btn.querySelector('span:first-child').textContent = isOpen ? 'Read Post' : 'Close';
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(a.getAttribute('href'));
+      if (target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
